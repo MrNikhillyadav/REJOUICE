@@ -84,6 +84,7 @@ nav h4{
     font-size: 27vw;
     font-weight: 100;
     line-height: 30vw;
+    display: inline-block;
 
 }
 #page2{
@@ -117,3 +118,154 @@ nav h4{
     font-size: 1.6vw;
     font-weight: 100;
 }
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    padding: 3vw;
+    position: relative;
+
+}
+#page3-top{
+    /* background-color: red; */
+    text-align: center;
+
+}
+#page3-top h4 {
+    margin-bottom: 1vw;
+    font-size:  1.1vw;
+    font-weight: 500;
+}
+#page3-top h4 span {
+    background-color: black;
+    color: white;
+    font-size: .68vw;
+    padding: .3vw .6vw;
+    border-radius: 10vw;
+}
+#page3-top h2 {
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+#page3-cards {
+    /* background-color: red; */
+    height: 75vh;
+    width: 100%;
+    margin-top: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#page3-cards .boxes {
+    background-color: blue;
+    height: 100%;
+    width: 32.5%;
+    position: relative;
+}
+#page3-cards .boxes video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position:  center;
+
+}
+#page3-cards .boxes img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover ;
+    object-position:  center;
+    /* to make this transition smooth */
+    transition: all ease-in .6s;
+}
+#page3-cards .boxes:hover img {
+    opacity: 0;
+}
+
+#page4 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    /* background-color: black; */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 6vw 
+    margin-bottom: 6vw 
+
+}
+#page4 video {
+    height: 140%;
+}
+#page4 svg {
+    height: 75%;
+    position: absolute;
+
+}
+#page5 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 6vw 0;
+
+}
+#page5 h1 {
+    font-family: rejouice;
+    font-size: 10vw;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+    width: 96%;
+    margin-left: 2%;
+    
+}
+#swiperdiv {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    margin-top: -5%;
+
+}
+
+.swiper {
+    width: 120%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    /* to change the width of the slider */
+    /* width: 400px !important;  */
+    text-align: center;
+    font-size: 18px;
+    /* background-color: #515050; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 19%;
+    object-fit: cover;
+  }
+
+  #loader {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 10px;
+  }
+
+  #loader h3 {
+    font-size: 2vw;
+    font-weight: 100vw;
+  }
+

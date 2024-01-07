@@ -112,3 +112,56 @@ function animationPage2(){
 animationPage2()
 
 
+function swipereffect(){
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+      });
+}
+
+swipereffect()
+
+
+
+// use are using timeline function to convert asynchronus into synchronus elements.
+
+var tl = gsap.timeline();
+tl.from('#loader h3', {
+    x : 40,
+    opacity: 0,
+    stagger : 0.1,
+    duration: 1,
+})
+tl.to("#loader h3", {
+    opacity: 0,
+    stagger: 0.1,
+    duration: 1,
+    x: -20
+    
+})
+tl.to("#loader ", {
+    opacity: 0,
+    duration: .8,
+    
+})
+tl.from("#page1-content h1 span", {
+    y: 100,
+    opacity: 0,
+    duration: 0.5,
+    stagger: .1,
+    delay: -.5, //thoda sa pehle chalana h isliye '-' delay use kra h.
+
+})
+// loader cursor div k uper hi h bas opacity 0 hui h. So we need to disable the loader div to move the cursor.
+tl.to("#loader", {
+    display : "none"
+}) 
+
+
+
+
